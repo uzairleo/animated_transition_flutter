@@ -1,4 +1,4 @@
-import 'package:animated_transition_flutter/BouncingPageRoute.dart';
+import 'package:animated_transition_flutter/transition_Widgets/BouncingPageRoute.dart';
 import 'package:animated_transition_flutter/SecondScreen.dart';
 import 'package:flutter/material.dart';
 
