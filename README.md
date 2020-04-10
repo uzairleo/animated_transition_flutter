@@ -1,6 +1,5 @@
 # animated_transition_flutter
-
-A new Flutter project.
+<img src="http://www.github.com/uzairleo/animated_transition_flutter/leo.gif">
 
 ## Getting Started
 
