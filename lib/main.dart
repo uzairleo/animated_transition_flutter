@@ -27,29 +27,32 @@ class _FirstScreenState extends State<FirstScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue,
       appBar: AppBar(
         title: Text("First Screen"),
         centerTitle: true,
       ),
-      body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Text("Press to navigate to Second Screen"),
-            RaisedButton(
-                child: Text("Material Page Route"),
-                onPressed: () {
-                  _pageNavigator("MaterialPageRoute");
-                }),
-            SizedBox(
-              height: 20.0,
-            ),
-            RaisedButton(
-                child: Text("Page Route Builder"),
-                onPressed: () {
-                  _pageNavigator("PageRouteBuilder");
-                }),
-          ]),
+      body: Center(
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Text("Press to navigate to Second Screen"),
+              RaisedButton(
+                  child: Text("Material Page Route"),
+                  onPressed: () {
+                    _pageNavigator("MaterialPageRoute");
+                  }),
+              SizedBox(
+                height: 20.0,
+              ),
+              RaisedButton(
+                  child: Text("Page Route Builder"),
+                  onPressed: () {
+                    _pageNavigator("PageRouteBuilder");
+                  }),
+            ]),
+      ),
     );
   }
 
@@ -68,12 +71,12 @@ class _FirstScreenState extends State<FirstScreen> {
               Animation<double> secanimation,Widget child){
                 //adding curve or transition logic
                 animation=CurvedAnimation(
-                  parent: secanimation,
+                  parent: animation,
                   curve: Curves.elasticInOut);
                 return ScaleTransition(
                   scale: animation,
                   child: child,
-                  alignment: Alignment.center,
+                  alignment: Alignment.bottomCenter,
                   );
               },
         pageBuilder:
