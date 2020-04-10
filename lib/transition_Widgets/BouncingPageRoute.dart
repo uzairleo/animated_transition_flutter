@@ -10,13 +10,13 @@ Widget routeName;
               Animation<double> secanimation,Widget child){
                 //adding curve or transition logic
                 animation=CurvedAnimation(
-                  parent: secanimation,
-                  curve: Curves.elasticInOut
+                  parent: animation,
+                  curve: Curves.elasticInOut,
                   );
                 return ScaleTransition(
                   scale: animation,
                   child: child,
-                  alignment: Alignment.center,
+                  alignment: Alignment.bottomCenter,
                   );
               },
         pageBuilder:

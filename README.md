@@ -1,6 +1,7 @@
 # animated_transition_flutter
 <!-- <img src="http://www.github.com/uzairleo/animated_transition_flutter/leo.gif"> -->
  <!-- <img src="F:\Practice Flutter\animated_transition_flutter\leo.gif"  > -->
+ <!-- this below line will add leo.gif to my repo -->
 ![](leo.gif)
 ## Getting Started
 
