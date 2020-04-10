@@ -1,3 +1,4 @@
+import 'package:animated_transition_flutter/BouncingPageRoute.dart';
 import 'package:animated_transition_flutter/SecondScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -58,7 +59,10 @@ class _FirstScreenState extends State<FirstScreen> {
         return SecondScreen();
       }));
     } else if (routeType == "PageRouteBuilder") {
-      Navigator.push(context, PageRouteBuilder(
+      Navigator.push(
+        context, 
+        // BouncingPageRoute(routeName: SecondScreen()),
+      PageRouteBuilder(
         transitionDuration: Duration(seconds:  2),
       transitionsBuilder:  (BuildContext context, Animation<double> animation,
               Animation<double> secanimation,Widget child){
