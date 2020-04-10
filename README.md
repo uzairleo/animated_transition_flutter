@@ -1,6 +1,6 @@
 # animated_transition_flutter
-<img src="http://www.github.com/uzairleo/animated_transition_flutter/leo.gif">
-
+<!-- <img src="http://www.github.com/uzairleo/animated_transition_flutter/leo.gif"> -->
+ <img src="F:\Practice Flutter\animated_transition_flutter\leo.gif"  >
 ## Getting Started
 
 This project is a starting point for a Flutter application.
